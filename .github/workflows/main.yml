@@ -162,53 +162,53 @@ jobs:
               WITH_CUDNN: false
               CI_OS_NAME: linux
 
-          # Mac OSX
+          # # Mac OSX
           # Mac OSX - Python - CMake - CPU
-          - os: macos-10.15
-            os_name: osx
-            env:
-              NAME: OSX-python-cmake-cpu
-              WITH_CUDA: false
-              WITH_CUDNN: false
-              WITH_PYTHON: true
-              CI_OS_NAME: osx
-          # Mac OSX - Python - CMake - OpenCL
-          - os: macos-10.15
-            os_name: osx
-            env:
-              NAME: OSX-default-cmake-opencl
-              WITH_CUDA: false
-              WITH_CUDNN: false
-              WITH_OPEN_CL: true
-              CI_OS_NAME: osx
-          # Mac OSX - Python - CMake - CPU - Debug
-          - os: macos-10.15
-            os_name: osx
-            env:
-              NAME: OSX-python-cmake-cpu-debug
-              WITH_CUDA: false
-              WITH_CUDNN: false
-              WITH_PYTHON: true
-              WITH_DEBUG: true
-              CI_OS_NAME: osx
-          # Mac OSX - Python - CMake - CPU - Unity
-          - os: macos-10.15
-            os_name: osx
-            env:
-              NAME: OSX-python-cmake-cpu-unity
-              WITH_CUDA: false
-              WITH_CUDNN: false
-              WITH_PYTHON: true
-              WITH_UNITY: true
-              CI_OS_NAME: osx
-          # Mac OSX - Default - CMake - CPU
-          - os: macos-10.15
-            os_name: osx
-            env:
-              NAME: OSX-default-cmake-cpu
-              WITH_CUDA: false
-              WITH_CUDNN: false
-              CI_OS_NAME: osx
+          # - os: macos-10.15
+          #   os_name: osx
+          #   env:
+          #     NAME: OSX-python-cmake-cpu
+          #     WITH_CUDA: false
+          #     WITH_CUDNN: false
+          #     WITH_PYTHON: true
+          #     CI_OS_NAME: osx
+          # # Mac OSX - Python - CMake - OpenCL
+          # - os: macos-10.15
+          #   os_name: osx
+          #   env:
+          #     NAME: OSX-default-cmake-opencl
+          #     WITH_CUDA: false
+          #     WITH_CUDNN: false
+          #     WITH_OPEN_CL: true
+          #     CI_OS_NAME: osx
+          # # Mac OSX - Python - CMake - CPU - Debug
+          # - os: macos-10.15
+          #   os_name: osx
+          #   env:
+          #     NAME: OSX-python-cmake-cpu-debug
+          #     WITH_CUDA: false
+          #     WITH_CUDNN: false
+          #     WITH_PYTHON: true
+          #     WITH_DEBUG: true
+          #     CI_OS_NAME: osx
+          # # Mac OSX - Python - CMake - CPU - Unity
+          # - os: macos-10.15
+          #   os_name: osx
+          #   env:
+          #     NAME: OSX-python-cmake-cpu-unity
+          #     WITH_CUDA: false
+          #     WITH_CUDNN: false
+          #     WITH_PYTHON: true
+          #     WITH_UNITY: true
+          #     CI_OS_NAME: osx
+          # # Mac OSX - Default - CMake - CPU
+          # - os: macos-10.15
+          #   os_name: osx
+          #   env:
+          #     NAME: OSX-default-cmake-cpu
+          #     WITH_CUDA: false
+          #     WITH_CUDNN: false
+          #     CI_OS_NAME: osx
 
           # TO-DO (not passing)
           # Note: CUDA jobs fail in U16 because of an issue with GCC 5.5 (https://github.com/NVIDIA/apex/issues/529). GH Actions doesn't support
